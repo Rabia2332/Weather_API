@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+		}
+		.container {
+			max-width: 500px;
+			margin: 0 auto;
+			text-align: center;
+			padding: 20px;
+			background-color: #ffffff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+		}
+		h1 {
+			font-size: 36px;
+			font-weight: bold;
+			color: #333333;
+			margin-top: 0;
+		}
+		h2 {
+			font-size: 28px;
+			font-weight: bold;
+			color: #333333;
+			margin-top: 20px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+		table {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 100%;
+			border-collapse: collapse;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+		}
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border-bottom: 1px solid #cccccc;
+			color: #333333;
+		}
+		th {
+			background-color: #f2f2f2;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Weather App</h1>
+		<h2>{{ city }}</h2>
+		<table>
+			<tbody>
+				<tr>
+					<th>Temperature:</th>
+					<td>{{ temp }}°C</td>
+				</tr>
+				<tr>
+					<th>Pressure:</th>
+					<td>{{ pressure }} hPa</td>
+				</tr>
+				<tr>
+					<th>Humidity:</th>
+					<td>{{ humidity }}%</td>
+				</tr>
+				<tr>
+					<th>Sunrise:</th>
+					<td>{{ sunrise }}</td>
+				</tr>
+				<tr>
+					<th>Sunset:</th>
+					<td>{{ sunset }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
